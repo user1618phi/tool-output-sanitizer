@@ -72,8 +72,13 @@ uv sync
 Download the model (557 MB) into `models/P`:
 
 ```bash
-mkdir -p models && curl -L https://github.com/user1618phi/tool-output-sanitizer/releases/download/v0.1.0/tool-output-sanitizer-P.tar.gz | tar -xz -C models
+mkdir -p models
+curl -L --fail --retry 5 -C - -o tool-output-sanitizer-P.tar.gz https://github.com/user1618phi/tool-output-sanitizer/releases/download/v0.1.0/tool-output-sanitizer-P.tar.gz
+tar -xzf tool-output-sanitizer-P.tar.gz -C models
 ```
+
+If the download stops, run the `curl` line again: it continues from where it stopped. The file is complete when
+`shasum -a 256 tool-output-sanitizer-P.tar.gz` prints `5041087cca5db891a3b8d7c9929337d4a61c9da3218d87dee02e1bac0dd69d18`.
 
 | Model | Release file | When to use |
 |---|---|---|
