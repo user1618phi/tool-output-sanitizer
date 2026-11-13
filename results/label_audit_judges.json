@@ -1,0 +1,25 @@
+{
+ "pairs_checked": 400,
+ "first_judge": "openai/gpt-oss-120b",
+ "judges": {
+  "gemma": "google/gemma-4-31B",
+  "deepseek": "deepseek-ai/DeepSeek-V4.1-Flash"
+ },
+ "agreement": {
+  "attack": {
+   "gemma": 0.9975,
+   "deepseek": 0.985,
+   "both": 0.9825,
+   "neither": 0.0,
+   "no_answer": 0.0
+  },
+  "twin": {
+   "gemma": 0.48,
+   "deepseek": 0.7175,
+   "both": 0.4625,
+   "neither": 0.265,
+   "no_answer": 0.0
+  }
+ },
+ "pairs_confirmed_by_both_judges": 0.45
+}

@@ -1,0 +1,182 @@
+{
+  "train": "data/regimes_v2/logo_without_alemllm.jsonl",
+  "seed": 0,
+  "model": "answerdotai/ModernBERT-base",
+  "n_train_docs": 8920,
+  "n_train_windows": 10235,
+  "thresholds": {
+    "fpr1": 0.3631386160850525,
+    "fpr5": 0.03191915154457092
+  },
+  "results": {
+    "bipia_test": {
+      "n": 1000,
+      "n_injected": 800,
+      "token_precision": 0.997,
+      "token_recall": 0.8888,
+      "token_f1": 0.9398,
+      "over_removal": 0.0005,
+      "auroc": 0.9985,
+      "tpr_at_fpr1": 0.985,
+      "fpr_at_fpr1": 0.035,
+      "tpr_at_fpr5": 0.9975,
+      "fpr_at_fpr5": 0.045
+    },
+    "browsesafe_test": {
+      "n": 400,
+      "n_injected": 188,
+      "auroc": 0.7674,
+      "tpr_at_fpr1": 0.6543,
+      "fpr_at_fpr1": 0.2311,
+      "tpr_at_fpr5": 0.7979,
+      "fpr_at_fpr5": 0.5047
+    },
+    "injecagent_base": {
+      "n": 1054,
+      "n_injected": 1054,
+      "token_precision": 0.983,
+      "token_recall": 0.6063,
+      "token_f1": 0.75,
+      "over_removal": 0.0058,
+      "tpr_at_fpr1": 0.6546,
+      "tpr_at_fpr5": 0.8245
+    },
+    "injecagent_enhanced": {
+      "n": 1054,
+      "n_injected": 1054,
+      "token_precision": 0.9981,
+      "token_recall": 0.7957,
+      "token_f1": 0.8855,
+      "over_removal": 0.0013,
+      "tpr_at_fpr1": 0.9307,
+      "tpr_at_fpr5": 1.0
+    },
+    "llmail_phase2": {
+      "n": 234,
+      "n_injected": 234,
+      "tpr_at_fpr1": 0.7735,
+      "tpr_at_fpr5": 0.8761
+    },
+    "notinject": {
+      "n": 339,
+      "n_injected": 0,
+      "token_precision": 0.0,
+      "token_recall": 0.0,
+      "token_f1": 0.0,
+      "over_removal": 0.2295,
+      "fpr_at_fpr1": 0.5959,
+      "fpr_at_fpr5": 0.941
+    },
+    "synth_alemllm": {
+      "n": 446,
+      "n_injected": 153,
+      "token_precision": 0.9523,
+      "token_recall": 0.6357,
+      "token_f1": 0.7625,
+      "over_removal": 0.0007,
+      "auroc": 0.9777,
+      "tpr_at_fpr1": 0.7974,
+      "fpr_at_fpr1": 0.0273,
+      "tpr_at_fpr5": 0.9477,
+      "fpr_at_fpr5": 0.1126
+    },
+    "synth_deepseek": {
+      "n": 398,
+      "n_injected": 135,
+      "token_precision": 0.9902,
+      "token_recall": 0.963,
+      "token_f1": 0.9764,
+      "over_removal": 0.0004,
+      "auroc": 0.9994,
+      "tpr_at_fpr1": 1.0,
+      "fpr_at_fpr1": 0.0266,
+      "tpr_at_fpr5": 1.0,
+      "fpr_at_fpr5": 0.1103
+    },
+    "synth_gemma": {
+      "n": 358,
+      "n_injected": 122,
+      "token_precision": 0.9498,
+      "token_recall": 0.9714,
+      "token_f1": 0.9605,
+      "over_removal": 0.001,
+      "auroc": 0.996,
+      "tpr_at_fpr1": 0.9918,
+      "fpr_at_fpr1": 0.0551,
+      "tpr_at_fpr5": 1.0,
+      "fpr_at_fpr5": 0.1864
+    },
+    "synth_glm": {
+      "n": 492,
+      "n_injected": 169,
+      "token_precision": 0.9736,
+      "token_recall": 0.9423,
+      "token_f1": 0.9577,
+      "over_removal": 0.001,
+      "auroc": 0.9989,
+      "tpr_at_fpr1": 0.9882,
+      "fpr_at_fpr1": 0.0464,
+      "tpr_at_fpr5": 1.0,
+      "fpr_at_fpr5": 0.1548
+    },
+    "synth_gptoss": {
+      "n": 466,
+      "n_injected": 161,
+      "token_precision": 0.9847,
+      "token_recall": 0.9644,
+      "token_f1": 0.9745,
+      "over_removal": 0.0004,
+      "auroc": 0.9956,
+      "tpr_at_fpr1": 0.9627,
+      "fpr_at_fpr1": 0.0164,
+      "tpr_at_fpr5": 0.9938,
+      "fpr_at_fpr5": 0.1311
+    },
+    "synth_kimi": {
+      "n": 408,
+      "n_injected": 140,
+      "token_precision": 0.9582,
+      "token_recall": 0.9201,
+      "token_f1": 0.9388,
+      "over_removal": 0.0011,
+      "auroc": 0.9952,
+      "tpr_at_fpr1": 0.9857,
+      "fpr_at_fpr1": 0.0896,
+      "tpr_at_fpr5": 1.0,
+      "fpr_at_fpr5": 0.2388
+    },
+    "synth_qwen": {
+      "n": 281,
+      "n_injected": 95,
+      "token_precision": 0.9736,
+      "token_recall": 0.9758,
+      "token_f1": 0.9747,
+      "over_removal": 0.0006,
+      "auroc": 0.9993,
+      "tpr_at_fpr1": 0.9895,
+      "fpr_at_fpr1": 0.0269,
+      "tpr_at_fpr5": 1.0,
+      "fpr_at_fpr5": 0.1344
+    },
+    "toucan_benign_test": {
+      "n": 710,
+      "n_injected": 0,
+      "token_precision": 0.0,
+      "token_recall": 0.0,
+      "token_f1": 0.0,
+      "over_removal": 0.0,
+      "fpr_at_fpr1": 0.0028,
+      "fpr_at_fpr5": 0.062
+    },
+    "toucan_benign_val": {
+      "n": 835,
+      "n_injected": 0,
+      "token_precision": 0.0,
+      "token_recall": 0.0,
+      "token_f1": 0.0,
+      "over_removal": 0.0,
+      "fpr_at_fpr1": 0.0096,
+      "fpr_at_fpr5": 0.0491
+    }
+  }
+}

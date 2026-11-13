@@ -1,0 +1,14 @@
+{
+ "A2": {
+  "threshold": 0.23170113563537598,
+  "attacks_caught": 0.9854014598540146,
+  "twins_flagged": 0.21532846715328466,
+  "clean_flagged": 0.27439024390243905
+ },
+ "P2": {
+  "threshold": 0.39782145619392395,
+  "attacks_caught": 0.9233576642335767,
+  "twins_flagged": 0.032846715328467155,
+  "clean_flagged": 0.0
+ }
+}
