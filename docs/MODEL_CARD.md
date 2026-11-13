@@ -58,6 +58,11 @@ For span removal the product model uses a token threshold of 0.7, chosen on a de
 Measured on an Apple M1 Pro laptop, model in memory, real tool outputs (median 930 characters): median 52 ms and 95th percentile
 297 ms on the built-in GPU; median 111 ms and 95th percentile 622 ms on the CPU.
 
+## Download
+
+The weights of both models are attached to the [v0.1.0 release](https://github.com/user1618phi/tool-output-sanitizer/releases/tag/v0.1.0):
+`tool-output-sanitizer-P.tar.gz` (product model) and `tool-output-sanitizer-A2.tar.gz` (research model). Unpack into `models/`.
+
 ## How to run
 
 ```python

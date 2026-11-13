@@ -69,8 +69,18 @@ cd tool-output-sanitizer
 uv sync
 ```
 
-> **Model weights.** Trained weights are not published yet. Every command below expects a trained model in `models/P`
-> (a folder with `config.json`, `model.safetensors`, the tokenizer files and an optional `threshold.json`).
+Download the model (557 MB) into `models/P`:
+
+```bash
+mkdir -p models && curl -L https://github.com/user1618phi/tool-output-sanitizer/releases/download/v0.1.0/tool-output-sanitizer-P.tar.gz | tar -xz -C models
+```
+
+| Model | Release file | When to use |
+|---|---|---|
+| Product model `P` | `tool-output-sanitizer-P.tar.gz` | the default: few false alarms |
+| Research model `A2` | `tool-output-sanitizer-A2.tar.gz` | catches more attacks, but flags most instruction-like text |
+
+Both are on the [releases page](https://github.com/user1618phi/tool-output-sanitizer/releases). Weights are Apache-2.0.
 
 ### Python
 
